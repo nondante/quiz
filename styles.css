@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Seaweed+Script');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#html{
+  background: url(img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,h3{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Seaweed Script', cursive;
+  font-size: 3em;
+  color: #00bcb5;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#myProgress {
+    width: 40%;
+    background-color: white;
+    margin: 0 auto;
+    border:0.3em solid #00bcb5;
+    border-radius:2em;
+    margin-bottom: 1em;
+}
+#myBar {
+
+    height: 30px;
+    background-color: #b6c399;
+    border-radius:2em;
+}
+
+.questionContainer{
+  width: 600px;
+  margin: auto auto;
+  display:grid;
+  grid-template-columns: 300px 300px;
+  grid-row: auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+
+.question{
+  height: 150px;
+  background-color:#ffcecc;
+  padding:20px;
+  border-radius:10px;
+  color:#4c072c;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:40px;
+  font-family:sans-serif;
+
+}
+
+.radioButtons{
+  visibility: hidden;
+}
+
+.radioButtons:checked{
+  background: green;
+}
+
+label {
+
+    text-align: center;
+    line-height:5em;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.submitAnswer{
+  display: block;
+  width: 20%;
+  height: 70px;
+  margin: 2em auto 1em;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/*BUTTON*/
+.submitAnswer{
+
+
+  border:0.2em solid #00bcb5;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Seaweed Script', cursive;
+  font-size: 2em;
+  font-weight:300;
+  color:#00bcb5;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.submitAnswer:hover{
+color:#000000;
+background-color: #00bcb5;
+}
+
+/*FORM*/
+.form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#testName {
+  width: 200px;
+  text-align: center;
+  border:0.2em solid #00bcb5;
+  -webkit-appearance: none;
+  outline: none;
+  height: 50px;
+  display: block;
+  margin: 2em auto;
+  color: #00bcb5;
+}
+
+#testDropdown {
+  border:0.2em solid #00bcb5;
+  display:block;
+  margin:2em auto;
+  height: 50px;
+}
+#startTestButton{
+  width:200px;
+  margin:auto;
+  display: block;
+  border:0.2em solid #00bcb5;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Seaweed Script', cursive;
+  font-size: 2em;
+  font-weight:300;
+  color:#00bcb5;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+#startTestButton:hover {
+  color:#000000;
+  background-color: #00bcb5;
+}
+
+.container{
+  width: 800px;
+  height: 500px;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
+#finalResult {
+  width:60%;
+  font-size: 2em;
+}
+
+#thankyou {
+  width:60%;
+}
+
+@media (max-width: 700px) {
+  .questionContainer{
+    width: 400px;
+    grid-template-columns: 400px;
+  }
+
+  #myProgress {
+      width: 70%;
+  }
+
+  .submitAnswer{
+    width: 50%;
+}
+
+h1,h3{
+  width: 70%;
+}
+
+#finalResult {
+  width:60%;
+  font-size: 2em;
+  text-align: center;
+}
+
+}

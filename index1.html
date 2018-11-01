@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jautājums 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="firstQuestionForm" onsubmit="return firstQuestionValidation(event)" action="grade.php" method="post" id="quiz">
+    <h3>Cik ir 2+2?</h3>
+    <div class="questionContainer">
+      <div class="question">
+         <input class="radioButtons" type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+         <label for="question-1-answers-A">1</label>
+      </div>
+      <div class="question">
+         <input class="radioButtons" type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+         <label for="question-1-answers-B">4</label>
+      </div>
+      <div class="question">
+         <input class="radioButtons" type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+         <label for="question-1-answers-C">3</label>
+      </div>
+      <div class="question">
+         <input class="radioButtons" type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+         <label for="question-1-answers-D">5</label>
+      </div>
+    </div>
+    <input class="submitAnswer" type="submit" value="Iesniegt" />
+  </form>
+
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+
+</body>
+</html>
